@@ -10,5 +10,6 @@ RUN apt-get update && \
                        ca-certificates \
                        openjdk-8-jdk \
                        gradle \
-                       python-pip
+                       python-pip \
+                       python-virtualenv
 RUN pip install cookiecutter
