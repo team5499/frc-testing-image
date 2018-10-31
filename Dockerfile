@@ -11,5 +11,5 @@ RUN apt-get update && \
                        openjdk-8-jdk \
                        gradle \
                        python-pip \
-                       python-virtualenv
+                       zlib1g-dev
 RUN pip install cookiecutter
