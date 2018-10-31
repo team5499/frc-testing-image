@@ -14,5 +14,6 @@ RUN apt-get update && \
                        zlib1g-dev \
                        libbz2-dev \
                        libreadline-dev \
-                       libssl-dev
+                       libssl-dev \
+                       libsqlite3-dev
 RUN pip install cookiecutter
