@@ -8,6 +8,7 @@ RUN apt-get update && \
                        tar \
                        gzip \
                        ca-certificates \
+                       openjdk-8-jdk \
                        gradle \
                        python-pip
 RUN pip install cookiecutter
