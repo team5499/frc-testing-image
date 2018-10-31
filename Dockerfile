@@ -11,5 +11,8 @@ RUN apt-get update && \
                        openjdk-8-jdk \
                        gradle \
                        python-pip \
-                       zlib1g-dev
+                       zlib1g-dev \
+                       libbz2-dev \
+                       libreadline-dev \
+                       libssl-dev
 RUN pip install cookiecutter
