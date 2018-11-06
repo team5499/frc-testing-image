@@ -16,4 +16,5 @@ RUN apt-get update && \
                        libreadline-dev \
                        libssl-dev \
                        libsqlite3-dev
-RUN pip install cookiecutter
+RUN pip install cookiecutter tox
+RUN git config --global user.email "<>" && git config --global user.name "Team 5499 Testing Image"
