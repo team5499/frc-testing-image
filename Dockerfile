@@ -10,11 +10,9 @@ RUN apt-get update && \
                        ca-certificates \
                        openjdk-8-jdk \
                        gradle \
-                       python-pip \
-                       zlib1g-dev \
-                       libbz2-dev \
-                       libreadline-dev \
-                       libssl-dev \
-                       libsqlite3-dev
-RUN pip install cookiecutter tox
-RUN git config --global user.email "<>" && git config --global user.name "Team 5499 Testing Image"
+                       python2.7 \
+                       python-pip
+RUN pip install cookiecutter \
+                tox
+RUN git config --global user.name "Team 5499 Testing Image" && \
+    git config --global user.email "<>"
