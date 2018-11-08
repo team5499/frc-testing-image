@@ -13,8 +13,7 @@ RUN apt-get update && \
                        python2.7 \
                        python-pip \
                        zlib1g-dev
-RUN pip install codecov \
-                cookiecutter \
+RUN pip install cookiecutter \
                 tox
 RUN git config --global user.name "Team 5499 Testing Image" && \
     git config --global user.email "<>"
