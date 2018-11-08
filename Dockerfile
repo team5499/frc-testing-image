@@ -11,7 +11,8 @@ RUN apt-get update && \
                        openjdk-8-jdk \
                        gradle \
                        python2.7 \
-                       python-pip
+                       python-pip \
+                       zlib1g-dev
 RUN pip install cookiecutter \
                 tox
 RUN git config --global user.name "Team 5499 Testing Image" && \
