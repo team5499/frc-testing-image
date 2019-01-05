@@ -11,11 +11,13 @@ RUN apt-get update && \
                        tar \
                        gzip \
                        ca-certificates \
-                       openjdk-11-jdk \
-                       gradle \
+                       openjdk-8-jdk \
                        python2.7 \
                        python-pip \
                        zlib1g-dev
+RUN apt-get install -y openjdk-11-jdk && \
+    apt-get purge -y openjdk-8-jdk
+RUN apt-get install -y gradle
 RUN pip install cookiecutter \
                 tox
 RUN cd ~ && \
